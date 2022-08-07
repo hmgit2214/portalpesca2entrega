@@ -1,0 +1,266 @@
+* { margin:0;
+    padding:0;
+
+    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+
+    body{
+        font-family: 'Arima', cursive;
+        background-image:url('../Imágenes/texture-water-sea-wallpaper-preview.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+ 
+        }
+
+        #main{
+            display:grid;
+            /*grid-template-columns: auto auto auto;
+            grid-template-rows:auto auto auto auto auto; */
+            grid-template-areas:"header header header" "nav nav nav" "section section section" "aside aside aside" "footer footer footer";
+            border: 2px solid black;
+       
+
+        }
+    
+
+        header{
+            grid-area:header;
+            display:flex;
+            background-color: blue;
+            justify-content:center;
+            align-items: center;
+            
+        }
+
+        #Logo_Header{
+            width:80px ;
+            margin-right:30px;
+    
+        }
+
+        h1{
+            font-size:40px ;
+            color: rgb(22, 22, 21);
+            background-color:blue
+        }
+
+        nav{
+            grid-area:nav;
+            margin-top: 15px;
+            font-size: 15px;
+            }
+
+
+            .Menu{list-style: none;
+                background-color:green;
+                display:flex;
+                padding-left: 10%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                justify-content:space-between;
+                  
+               }
+       
+                a{
+                color: antiquewhite;
+                font-size: 20px ;
+                
+                } 
+    
+                li{
+                display:inline-block;
+                width:15%;
+                font-size:larger;
+                position:relative;
+    
+               }
+
+
+               #texto__principal{
+                background-color:blue;
+                color: aliceblue;
+                padding-top:20px;
+                padding-bottom:20px;
+                padding-left:20px ;
+                padding-right:20px ;
+                margin-top:20px ;
+                margin-bottom:25px;
+                margin-left:25px;
+                margin-right:20px ;
+                text-align: justify;
+            
+                }
+
+
+            section{
+            grid-area:section;
+                
+        }    
+
+
+        #img_pri{
+            display:flex;
+            justify-content: center;
+
+        }
+
+        #imagen__principal{
+            width:80%;
+            box-shadow: 0 1px 7px 0 rgb(0 0 0 / 100%);
+                   
+        }
+        
+        
+            #Section_Dos{
+            display:grid;
+            margin:5px;
+            background-color:blue;
+            grid-template-columns:45% 30% auto;
+            grid-template-rows:auto auto auto;
+            text-align:center;
+            margin-top:20px ;
+    
+            }
+
+            article{
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+                
+            }
+
+            #ult_ima{
+                text-align:center;
+                grid-column: 2 / 4;
+                    
+            }
+
+
+            #video_dest{
+                display:grid;
+                grid-row:2 / 4;
+                justify-content:space-between;
+                box-shadow: 0 1px 8px 0 rgb(0 0 0 / 10%);
+            
+
+                  
+            }
+
+        
+            .img{
+                width: 80%;
+                margin: 10px;
+                box-shadow: 0 1px 7px 0 rgb(0 0 0 / 100%);   
+                
+            }
+
+
+            aside{
+                display:grid;
+                grid-column: 2 / 3;
+                text-align: center;
+                background-color: blue;
+                border:2px black solid;     
+                font-size:15px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-top:20px;
+                width:100%;
+                height:170px;
+                padding-top:10px;
+        
+                }
+            #datos_utiles{
+                text-align: center;
+                border:none ;
+            
+            }
+        
+            .class__datosutiles{
+                background-color:blue;
+                justify-items: flex-start;
+                width:100%;
+                padding-top:5px;
+                padding-bottom:5px;
+            
+            }
+
+/* Footer */
+
+            footer{
+            grid-area:footer;
+            display:flex;
+            height:35px;
+            justify-content:space-evenly;
+            align-items:center;
+            font-size:10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:blue;
+            text-align:center;
+            padding-block: 15px;
+            margin-top:100px;
+            margin-bottom: 10px;
+            border: top 4px; color: brown; border-top-style: solid;
+            border: bottom 4px; color:brown;border-style: solid;
+            border-left: none;
+            border-right: none;
+                                       
+        }
+
+        #Logo_Insta{
+            width:30px;
+
+        }
+
+        #Logo_Face{
+            width: 30px;
+
+        }
+
+                
+        #Logo_Contacto{
+          width:45px;
+
+        }
+
+        #Logo_footer{
+        width:60px;
+
+        } 
+
+        .card{
+            background-color: blueviolet;
+        }
+        
+        .footer__boot{
+            height: 100px;
+        }
+                               
+        /* CSS HTML CONTACT*/
+
+        #contacto{
+            display:grid;
+            grid-template-areas:"header header header" "nav nav nav" "section_contacto section_contacto section_contacto" "formulario formulario formulario" "footer footer footer";
+
+        }
+        
+        #section__contacto{
+            grid-area:section_contacto;
+            border-style: solid;
+            border-color: darkcyan;
+        }
+
+        #formulario{
+            display:grid;
+            grid-area:formulario;
+            font-size:20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:bisque;
+            width: 100%;
+            height:100%;
+            margin-left:10px;
+            margin-top: 30px; 
+            
+            
+        }
